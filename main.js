@@ -36,3 +36,41 @@ var swiper = new Swiper(".flashSales", {
     },
   },
 });
+
+// countdown
+
+function startCountdown(targetDate) {
+  const countdownElement = document.getElementById("countdown");
+  const daysElement = document.getElementById("days");
+  const hoursElement = document.getElementById("hours");
+  const minutesElement = document.getElementById("minutes");
+  const secondsElement = document.getElementById("seconds");
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysElement.textContent = days.toString().padStart(2, "0");
+    hoursElement.textContent = hours.toString().padStart(2, "0");
+    minutesElement.textContent = minutes.toString().padStart(2, "0");
+    secondsElement.textContent = seconds.toString().padStart(2, "0");
+
+    if (distance < 0) {
+      clearInterval(interval);
+      countdownElement.textContent = "Time's up!";
+    }
+  }
+
+  const interval = setInterval(updateCountdown, 1000);
+}
+
+// Set the target date for the countdown
+const targetDate = new Date("2024-12-31T23:59:59").getTime();
+startCountdown(targetDate);
