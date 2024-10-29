@@ -4,11 +4,10 @@
     <meta charset="UT  -8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
-  <body class="overflow-x-hidden">
-    <!-- head section -->
+  <body>
+    <!-- top text -->
     <section class="bg-black py-2 px-3">
       <div class="container mx-auto flex justify-center gap-x-10">
         <div class="flex gap-2">
@@ -26,7 +25,7 @@
         </div>
       </div>
     </section>
-    <!-- menubar -->
+    <!-- menu bar -->
     <section class="border-b-[2px] border-[#b3b3b3] px-3">
       <div class="container mx-auto mt-4 mb-4">
         <div class="flex flex-row items-center justify-between flex-wrap">
@@ -34,11 +33,11 @@
             <h1 class="font-bold text-2xl text-color-primary">Exclusive</h1>
           </div>
           <div>
-            <ul class="flex flex-row flex-wrap font-base gap-3 text-xl">
+            <ul class="flex flex-row flex-wrap gap-4 font-base text-xl">
               <li><a href="./index.html">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <li><a href="./account.html">Signup</a></li>
             </ul>
           </div>
           <div>
@@ -54,6 +53,9 @@
                 <a href="#"></a>
               </li>
               <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
               </li>
             </ul>
@@ -61,7 +63,407 @@
         </div>
       </div>
     </section>
+
     <!-- design -->
+    <section class="my-20">
+      <div class="container mx-auto px-3">
+        <!-- title -->
+        <div class="flex justify-between mb-14">
+          <div>
+            <h2 class="font-normal text-xl text-color-text">Wishlist (4)</h2>
+          </div>
+          <div>
+            <button
+              class="py-3 px-12 rounded border-2 border-[#808080] font-medium text-[16px] text-color-text duration-300 w-full"
+            >
+              Move All To Bag
+            </button>
+          </div>
+        </div>
+        <!-- cards row one -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+          <!-- box one -->
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <!-- box two -->
+        </div>
+      </div>
+    </section>
+
+    <!-- design row two -->
+    <section class="mt-20 mb-36">
+      <div class="container mx-auto px-3">
+        <!-- title -->
+        <div class="flex justify-between mb-14">
+          <div>
+            <ul class="flex items-center gap-3">
+              <li class="w-5 h-10 rounded bg-color-primary"></li>
+              <li>
+                <h2 class="font-semibold text-base text-color-text">
+                  Just For You
+                </h2>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              class="py-3 px-12 rounded border-2 border-[#808080] font-medium text-[16px] text-color-text duration-300 w-full"
+            >
+              See All
+            </button>
+          </div>
+        </div>
+        <!-- cards row one -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+          <!-- box one -->
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded group">
+            <div
+              class="bg-[#f5f5f5] text-center py-[35px] px-[40px] relative rounded flex items-center justify-center"
+            >
+              <a href="#">
+                <img src="images/flashSales/crdOne.png" alt="image not found"
+              /></a>
+              <div>
+                <div
+                  class="bg-color-primary py-1 px-3 rounded absolute top-3 left-3"
+                >
+                  <a href="#"><h2 class="text-white">-40%</h2></a>
+                </div>
+                <div
+                  class="absolute bg-color-text py-2 text-center w-full bottom-0 left-0 rounded-bl-lg rounded-br-lg transition-opacity duration-300"
+                >
+                  <a href="#"
+                    ><h2 class="text-white font-semibold text-base">
+                      Add To Cart
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <ul class="absolute top-3 right-3">
+                    <li
+                      class="w-8 h-8 rounded-full bg-white flex justify-center items-center mb-2"
+                    >
+                      <a href="#"> <i class="fa-regular fa-trash-can"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-medium text-xl mt-4 mb-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <ul class="flex gap-1 font-medium text-[16px] mb-2">
+                <li class="text-color-primary">$120</li>
+                <li class="text-color-sm-text">$160</li>
+              </ul>
+            </div>
+          </div>
+          <!-- box two -->
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-color-text py-20">
@@ -161,6 +563,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/account.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
