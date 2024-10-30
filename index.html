@@ -2677,70 +2677,58 @@
 
     <!-- cart -->
 
-    <table class="table-auto">
-      <thead>
-        <tr>
-          <th>Song</th>
-          <th>Artist</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-          <td>Malcolm Lockyer</td>
-          <td>1961</td>
-        </tr>
-        <tr>
-          <td>Witchy Woman</td>
-          <td>The Eagles</td>
-          <td>1972</td>
-        </tr>
-        <tr>
-          <td>Shining Star</td>
-          <td>Earth, Wind, and Fire</td>
-          <td>1975</td>
-        </tr>
-      </tbody>
-    </table>
-
     <section class="my-20">
-      <div class="container mx-auto">
-        <div>
-          <h2>HOME / <span>Cart</span></h2>
-        </div>
-        <div class="w-full">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th>Song</th>
-                <th>Artist</th>
-                <th>Year</th>
-                <th>NAME</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                <td>Malcolm Lockyer</td>
-                <td>1961</td>
-                <td>Rakib</td>
-              </tr>
-              <tr>
-                <td>Witchy Woman</td>
-                <td>The Eagles</td>
-                <td>1972</td>
-                <td>20000</td>
-              </tr>
-              <tr>
-                <td>Shining Star</td>
-                <td>Earth, Wind, and Fire</td>
-                <td>1975</td>
-                <td>2024</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="overflow-x-auto px-10 py-6">
+        <table class="min-w-full bg-white">
+          <thead class="shadow-md rounded-md bg-white mb-10">
+            <tr class="flex justify-between">
+              <th class="px-10 py-6 text-left font-semibold text-gray-700">
+                Product
+              </th>
+              <th class="px-10 py-6 text-left font-semibold text-gray-700">
+                Price
+              </th>
+              <th class="px-10 py-6 text-left font-semibold text-gray-700">
+                Quantity
+              </th>
+              <th class="px-10 py-6 text-left font-semibold text-gray-700">
+                Subtotal
+              </th>
+            </tr>
+          </thead>
+          <tbody class="space-y-10">
+            <tr
+              class="flex justify-between shadow-md rounded-md bg-white mt-10"
+            >
+              <td class="px-10 py-6 text-gray-600">
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 flex flex-col items-end justify-center">
+                    <img
+                      class=""
+                      src="images/table/table-tv.png"
+                      alt="image not found"
+                    />
+                  </div>
+                  <h2 class="font-medium text-base text-color-text">
+                    LCD Monitor
+                  </h2>
+                </div>
+              </td>
+              <td class="px-10 py-6 text-gray-600">Row 1, Col 2</td>
+              <td class="px-10 py-6 text-gray-600">Row 1, Col 3</td>
+              <td class="px-10 py-6 text-gray-600">Row 1, Col 4</td>
+            </tr>
+            <tr
+              class="flex justify-between shadow-md rounded-md bg-white mt-10"
+            >
+              <td class="px-10 py-6 text-gray-600">Row 2, Col 1</td>
+              <td class="px-10 py-6 text-gray-600">Row 2, Col 2</td>
+              <td class="px-10 py-6 text-gray-600">Row 2, Col 3</td>
+              <td class="px-10 py-6 text-gray-600">Row 2, Col 4</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
       </div>
     </section>
 
